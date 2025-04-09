@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace TUBES1
+namespace TUBES1namespace modul7_kelompok7
 {
     internal class DataMahasiswa1030223000107
     {
@@ -28,7 +28,7 @@ namespace TUBES1
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while reading the JSON file: {ex.Message}");
+                Console.WriteLine($"Json eror {ex.Message}");
                 return null;
             }
         }
@@ -36,14 +36,14 @@ namespace TUBES1
 
     public class Mahasiswa1030223000107
     {
-        public Nama nama { get; set; }
-        public long nim { get; set; }
-        public string fakultas { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string gender{ get; set; }
+        public int age { get; set; }
+        public Address address { get; set; }
+        public List<Course> course { get; set; }
     }
 
-    public class Nama1030223000107
-    {
-        public string depan { get; set; }
-        public string belakang { get; set; }
-    }
+
+
 }
