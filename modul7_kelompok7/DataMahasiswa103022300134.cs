@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace TUBES1
 {
-    internal class DataMahasiswa1030223000134  
+    internal class DataMahasiswa103022300134  
     {
-        public async Task<DataMahasiswa1030223000134> ReadJsonAsync(string filePath)
+        private object firstName;
+        private object lastName;
+        private object course;
+        private object gender;
+        private object address;
+
+        public async Task<DataMahasiswa103022300134> ReadJsonAsync(string filePath)
         {
             try
             {
                 using FileStream openStream = File.OpenRead(filePath);
-                var mahasiswa = await JsonSerializer.DeserializeAsync<DataMahasiswa1030223000134>(openStream);
+                var mahasiswa = await JsonSerializer.DeserializeAsync<DataMahasiswa103022300134>(openStream);
 
                 if (mahasiswa != null)
                 {
@@ -34,14 +40,14 @@ namespace TUBES1
         }
     }
 
-    public class Mahasiswa1030223000134
+    public class Mahasiswa103022300134
     {
-        public Nama1030223000134 nama { get; set; }
+        public Nama103022300134 nama { get; set; }
         public long nim { get; set; }
         public string fakultas { get; set; }
     }
 
-    public class Nama1030223000134
+    public class Nama103022300134
     {
         public string depan { get; set; }
         public string belakang { get; set; }

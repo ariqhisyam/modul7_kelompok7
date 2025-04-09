@@ -1,10 +1,10 @@
 {
-   "firstName": "John",
-   "lastName": "Taslim",
-   "gender": "male",
-   "age": 25,
+   "firstName": "Ade",
+   "lastName": "Fathia",
+   "gender": "female",
+   "age": 19,
    "address": {
-       "streetAddress": "Lengkong",
+       "streetAddress": "Sukabirus",
        "city": "Bandung",
        "state": "West Java"
    },
